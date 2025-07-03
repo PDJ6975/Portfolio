@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 export default function CVSection() {
   return (
     <motion.section
-      id="experience"
+      id="cv"
       className="py-20 flex flex-col items-start"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
     >
-      <div className="w-full max-w-3xl mx-auto flex flex-col gap-10">
+      <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">
         <p className="text-[#8892b0] text-lg leading-relaxed max-w-2xl">
           Puedes consultar mi historial completo de proyectos, educación y certificaciones descargando mi currículum.
         </p>

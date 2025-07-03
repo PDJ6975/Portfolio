@@ -1,10 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
-import { GithubIcon } from "lucide-react";
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
+import { GithubIcon, LinkedinIcon } from "lucide-react";
 
 const sections = [
-  { id: "home", label: "Sobre mí" },
+  { id: "about", label: "Sobre mí" },
   { id: "projects", label: "Proyectos" },
   { id: "cv", label: "Currículum" },
   { id: "contact", label: "Contacto" },
@@ -33,11 +32,14 @@ export default function Sidebar() {
   }, []);
 
   return (
-    <aside className="hidden md:flex flex-col justify-between items-start w-72 min-w-[280px] max-w-[320px] h-fit mt-0 rounded-2xl bg-[#112240] p-10 shadow-lg border border-[#233554]" aria-label="Barra lateral de navegación">
+    <aside className="hidden md:flex flex-col justify-between items-start w-64 pr-8 pb-8 sticky top-24 self-start h-[calc(100vh-6rem)]" aria-label="Barra lateral de navegación">
       <div className="w-full">
-        <h1 className="text-3xl font-extrabold tracking-tight text-white mb-1 leading-tight">Antonio Rodríguez</h1>
-        <h2 className="text-base font-semibold text-[#64ffda] mb-8">Ingeniero de Software</h2>
-        <nav className="flex flex-col gap-1 mt-8 text-base font-medium" role="navigation" aria-label="Navegación principal">
+        <h1 className="text-3xl font-extrabold tracking-tight text-white/80 mb-1 leading-tight">Antonio Rodríguez</h1>
+        <h2 className="text-base font-semibold text-[#64ffda]">Ingeniero de Software</h2>
+        <p className="text-[#8892b0] text-sm leading-relaxed mt-2 mb-8 max-w-xs">
+          Construyo experiencias digitales accesibles y pixel-perfect para la web.
+        </p>
+        <nav className="flex flex-col gap-1 mt-8 text-[17px] font-medium" role="navigation" aria-label="Navegación principal">
           {sections.map((section) => (
             <a
               key={section.id}
@@ -56,12 +58,12 @@ export default function Sidebar() {
           ))}
         </nav>
       </div>
-      <div className="flex gap-5 mt-8 text-2xl ml-1">
-        <a href="https://github.com/PDJ6975" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Antonio Rodríguez Calderón" className="text-[#8892b0] hover:text-[#64ffda] transition-colors rounded-full p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#64ffda] focus-visible:ring-offset-2 focus-visible:ring-offset-[#112240]">
-          <GithubIcon className="w-7 h-7" />
+      <div className="flex gap-5 mt-12 text-2xl">
+        <a href="https://github.com/PDJ6975" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Antonio Rodríguez Calderón" className="text-[#8892b0] hover:text-[#64ffda] transition-colors rounded-full p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#64ffda] focus-visible:ring-offset-2">
+          <GithubIcon className="w-6 h-6" />
         </a>
-        <a href="mailto:antonito.rodriguez42@gmail.com" aria-label="Enviar email a Antonio Rodríguez Calderón" className="text-[#8892b0] hover:text-[#64ffda] transition-colors rounded-full p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#64ffda] focus-visible:ring-offset-2 focus-visible:ring-offset-[#112240]">
-          <EnvelopeIcon className="w-7 h-7" />
+        <a href="https://www.linkedin.com/in/antonio-rodriguez-calderon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Antonio Rodríguez Calderón" className="text-[#8892b0] hover:text-[#64ffda] transition-colors rounded-full p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#64ffda] focus-visible:ring-offset-2">
+          <LinkedinIcon className="w-6 h-6" />
         </a>
       </div>
     </aside>

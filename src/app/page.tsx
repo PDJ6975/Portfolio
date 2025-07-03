@@ -23,7 +23,7 @@ export default function Home() {
         <ProjectsSection />
       </Element>
       <div className="h-12" />
-      <Element name="experience">
+      <Element name="cv">
         <CVSection />
       </Element>
       <div className="h-12" />
