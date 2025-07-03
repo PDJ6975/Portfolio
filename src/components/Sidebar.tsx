@@ -5,8 +5,7 @@ import { GithubIcon, LinkedinIcon } from "lucide-react";
 const sections = [
   { id: "about", label: "Sobre mí" },
   { id: "projects", label: "Proyectos" },
-  { id: "cv", label: "Currículum" },
-  { id: "contact", label: "Contacto" },
+  { id: "cv", label: "Currículum / Contacto" },
 ];
 
 export default function Sidebar() {
@@ -32,11 +31,11 @@ export default function Sidebar() {
   }, []);
 
   return (
-    <aside className="hidden md:flex flex-col justify-between items-start w-64 pr-8 pb-8 sticky top-24 self-start h-[calc(100vh-6rem)]" aria-label="Barra lateral de navegación">
+    <aside className="hidden md:flex flex-col justify-between items-start w-80 pr-10 pb-8 sticky top-32 self-start h-[calc(100vh-6rem)]" aria-label="Barra lateral de navegación">
       <div className="w-full">
-        <h1 className="text-3xl font-extrabold tracking-tight text-white/80 mb-1 leading-tight">Antonio Rodríguez</h1>
-        <h2 className="text-base font-semibold text-[#64ffda]">Ingeniero de Software</h2>
-        <p className="text-[#8892b0] text-sm leading-relaxed mt-2 mb-8 max-w-xs">
+        <h1 className="text-4xl font-extrabold tracking-tight text-white/80 mb-1 leading-tight">Antonio Rodríguez</h1>
+        <h2 className="text-lg font-semibold text-[#64ffda]">Ingeniero de Software</h2>
+        <p className="text-[#8892b0] text-base md:text-lg leading-relaxed mt-3 mb-10 max-w-sm">
           Construyo experiencias digitales accesibles y pixel-perfect para la web.
         </p>
         <nav className="flex flex-col gap-1 mt-8 text-[17px] font-medium" role="navigation" aria-label="Navegación principal">
@@ -52,7 +51,7 @@ export default function Sidebar() {
               tabIndex={0}
               aria-current={active === section.id ? "page" : undefined}
             >
-              <span className={`block w-2 h-2 rounded-full mr-2 transition-all ${active === section.id ? 'bg-[#64ffda]' : 'bg-transparent group-hover:bg-[#64ffda]'}`}></span>
+              <span className={`block w-1 h-5 mr-3 transition-all ${active === section.id ? 'bg-[#64ffda]' : 'bg-transparent group-hover:bg-[#64ffda]'}`}></span>
               {section.label}
             </a>
           ))}
@@ -62,7 +61,7 @@ export default function Sidebar() {
         <a href="https://github.com/PDJ6975" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Antonio Rodríguez Calderón" className="text-[#8892b0] hover:text-[#64ffda] transition-colors rounded-full p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#64ffda] focus-visible:ring-offset-2">
           <GithubIcon className="w-6 h-6" />
         </a>
-        <a href="https://www.linkedin.com/in/antonio-rodriguez-calderon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Antonio Rodríguez Calderón" className="text-[#8892b0] hover:text-[#64ffda] transition-colors rounded-full p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#64ffda] focus-visible:ring-offset-2">
+        <a href="https://www.linkedin.com/in/antonio-rodr%C3%ADguez-calder%C3%B3n-238b84254/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Antonio Rodríguez Calderón" className="text-[#8892b0] hover:text-[#64ffda] transition-colors rounded-full p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#64ffda] focus-visible:ring-offset-2">
           <LinkedinIcon className="w-6 h-6" />
         </a>
       </div>

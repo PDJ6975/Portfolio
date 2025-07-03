@@ -5,21 +5,12 @@ import { GithubIcon, ExternalLink } from "lucide-react";
 const projects = [
   {
     year: "2024",
-    title: "Portfolio Profesional (este sitio)",
+    title: "Portfolio Personal (este sitio)",
     description:
       "Sitio web personal desarrollado con Next.js, Tailwind CSS y Framer Motion. Diseño inspirado en brittanychiang.com, con fondo de partículas, sidebar fijo, accesibilidad mejorada y despliegue en Vercel.",
     tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
     github: "https://github.com/PDJ6975/portfolio",
     demo: "https://portfolio-antonio.vercel.app/",
-  },
-  {
-    year: "2024",
-    title: "Gestor de Tareas",
-    description:
-      "Aplicación web full-stack con Spring Boot y React para gestionar tareas con roles de usuario, autenticación JWT, notificaciones en tiempo real y despliegue Docker.",
-    tech: ["React", "Spring Boot", "PostgreSQL", "Docker"],
-    github: "https://github.com/PDJ6975/gestor-tareas",
-    demo: "https://gestor-tareas-demo.vercel.app/",
   },
   {
     year: "2024",
@@ -54,17 +45,17 @@ export default function ProjectsSection() {
   return (
     <motion.section
       id="projects"
-      className="py-16 flex flex-col items-start"
+      className="py-10 flex flex-col items-start"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
     >
-      <div className="w-full max-w-3xl mx-auto flex flex-col gap-8">
+      <div className="w-full max-w-3xl mx-auto flex flex-col gap-4">
         {projects.map((project, idx) => (
           <motion.div
             key={project.title}
-            className="bg-transparent border border-transparent rounded-xl p-8 flex flex-col gap-3 transition-all duration-200 hover:bg-[#112240]/60 hover:border-[#233554]"
+            className="bg-transparent border border-transparent rounded-xl p-8 flex flex-col gap-2 transition-all duration-200 hover:bg-[#112240]/60 hover:border-[#233554]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -96,7 +87,7 @@ export default function ProjectsSection() {
                 </a>
               </div>
             </div>
-            <p className="text-[#ccd6f6] text-base leading-relaxed mb-1">{project.description}</p>
+            <p className="text-[#ccd6f6] text-base leading-relaxed text-justify mb-1">{project.description}</p>
             <div className="flex flex-wrap gap-2 mt-1">
               {project.tech.map((tech) => (
                 <span

@@ -31,7 +31,9 @@ export default function RootLayout({
           </div>
         </div>
         <footer className="w-full flex justify-center text-center text-xs text-[#8892b0] mb-4">
-          Portfolio diseñado en <span className="font-semibold text-[#64ffda] mx-1">Next.js</span> y <span className="font-semibold text-[#64ffda] mx-1">Tailwind CSS</span> · © {new Date().getFullYear()} Antonio Rodríguez Calderón
+          <div className="w-full max-w-3xl px-4 mx-auto text-center">
+            Portfolio diseñado en <span className="font-semibold text-[#64ffda] mx-1">Next.js</span> y <span className="font-semibold text-[#64ffda] mx-1">Tailwind CSS</span> · © {new Date().getFullYear()} Antonio Rodríguez Calderón
+          </div>
         </footer>
       </body>
     </html>

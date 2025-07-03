@@ -6,7 +6,7 @@ export default function ContactSection() {
   return (
     <motion.section
       id="contact"
-      className="py-16 flex flex-col items-start gap-5"
+      className="py-10 flex flex-col items-start gap-3"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -20,11 +20,7 @@ export default function ContactSection() {
         {/* Formulario de contacto */}
         <ContactForm />
 
-        <div className="flex gap-5 mt-6">
-          <a href="https://github.com/PDJ6975" target="_blank" rel="noopener noreferrer" className="text-[#8892b0] hover:text-[#64ffda] transition-colors font-medium flex items-center gap-1">
-            GitHub ↗
-          </a>
-        </div>
+        {/* Enlace eliminado para reducir elementos redundantes */}
       </div>
     </motion.section>
   );

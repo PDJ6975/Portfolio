@@ -6,7 +6,6 @@ import { GithubIcon } from 'lucide-react';
 import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
 import CVSection from "../components/CVSection";
-import ContactSection from "../components/ContactSection";
 
 const techBadge = (name: string, color: string) => (
   <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2 bg-gradient-to-r ${color} text-white shadow-md`}>{name}</span>
@@ -18,17 +17,13 @@ export default function Home() {
       <Element name="about">
         <AboutSection />
       </Element>
-      <div className="h-1" />
+      <div className="h-0" />
       <Element name="projects">
         <ProjectsSection />
       </Element>
-      <div className="h-1" />
+      <div className="h-0" />
       <Element name="cv">
         <CVSection />
-      </Element>
-      <div className="h-1" />
-      <Element name="contact">
-        <ContactSection />
       </Element>
     </div>
   );
