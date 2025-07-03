@@ -18,15 +18,15 @@ export default function Home() {
       <Element name="about">
         <AboutSection />
       </Element>
-      <div className="h-12" />
+      <div className="h-1" />
       <Element name="projects">
         <ProjectsSection />
       </Element>
-      <div className="h-12" />
+      <div className="h-1" />
       <Element name="cv">
         <CVSection />
       </Element>
-      <div className="h-12" />
+      <div className="h-1" />
       <Element name="contact">
         <ContactSection />
       </Element>

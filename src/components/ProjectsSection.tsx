@@ -5,23 +5,49 @@ import { GithubIcon, ExternalLink } from "lucide-react";
 const projects = [
   {
     year: "2024",
+    title: "Portfolio Profesional (este sitio)",
+    description:
+      "Sitio web personal desarrollado con Next.js, Tailwind CSS y Framer Motion. Diseño inspirado en brittanychiang.com, con fondo de partículas, sidebar fijo, accesibilidad mejorada y despliegue en Vercel.",
+    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
+    github: "https://github.com/PDJ6975/portfolio",
+    demo: "https://portfolio-antonio.vercel.app/",
+  },
+  {
+    year: "2024",
     title: "Gestor de Tareas",
     description:
-      "Aplicación web para gestión de tareas con autenticación, panel de usuario y notificaciones. Backend en Spring Boot, frontend en React.",
+      "Aplicación web full-stack con Spring Boot y React para gestionar tareas con roles de usuario, autenticación JWT, notificaciones en tiempo real y despliegue Docker.",
     tech: ["React", "Spring Boot", "PostgreSQL", "Docker"],
     github: "https://github.com/PDJ6975/gestor-tareas",
     demo: "https://gestor-tareas-demo.vercel.app/",
   },
   {
-    year: "2023",
-    title: "Portfolio Personal",
+    year: "2024",
+    title: "Fantasy Realms",
     description:
-      "Portfolio profesional desarrollado con Next.js y Tailwind CSS, animaciones y despliegue en Vercel.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/PDJ6975/portfolio",
-    demo: "https://portfolio-antonio.vercel.app/",
+      "Juego de cartas online tipo Fantasy Realms. API REST con Spring Boot, cliente React y comunicación en tiempo real mediante WebSockets. Documentación OpenAPI y CI/CD.",
+    tech: ["Spring Boot", "React", "WebSockets", "Swagger"],
+    github: "https://github.com/PDJ6975/fantasy-realms",
+    demo: "",
   },
-  // Puedes añadir más proyectos aquí
+  {
+    year: "2023",
+    title: "M30 Simulator",
+    description:
+      "Simulador de tráfico vehicular con Python y NetLogo. Modelos MLP y LSTM para predicción de flujo, análisis de sensibilidad y visualización interactiva.",
+    tech: ["Python", "TensorFlow", "scikit-learn", "NetLogo"],
+    github: "https://github.com/PDJ6975/m30-simulator",
+    demo: "",
+  },
+  {
+    year: "2023",
+    title: "NextRead",
+    description:
+      "Aplicación móvil multiplataforma para recomendaciones de libros usando IA (embeddings, MMR). Construida con Expo y Supabase.",
+    tech: ["React Native", "Expo", "TypeScript", "Supabase"],
+    github: "https://github.com/PDJ6975/nextread",
+    demo: "",
+  },
 ];
 
 export default function ProjectsSection() {
@@ -83,6 +109,18 @@ export default function ProjectsSection() {
             </div>
           </motion.div>
         ))}
+        {/* Enlace a todos los proyectos */}
+        <div className="mt-4 flex justify-end">
+          <a
+            href="https://github.com/PDJ6975"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 text-[#64ffda] hover:text-[#9effea] font-semibold transition-colors"
+          >
+            Ver todos los proyectos
+            <GithubIcon className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
+          </a>
+        </div>
       </div>
     </motion.section>
   );

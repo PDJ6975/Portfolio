@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <motion.section
       id="about"
-      className="py-20 flex items-start"
+      className="py-16 flex items-start"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
