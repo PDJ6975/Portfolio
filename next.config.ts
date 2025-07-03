@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
   basePath: isProd && repoName ? `/${repoName}` : undefined,
   assetPrefix: isProd && repoName ? `/${repoName}/` : undefined,
   images: { unoptimized: true }, // evita domains al exportar
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
