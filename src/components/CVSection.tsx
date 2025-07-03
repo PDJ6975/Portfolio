@@ -15,7 +15,7 @@ export default function CVSection() {
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">
         <p className="text-[#8892b0] text-lg leading-relaxed text-justify">Aquí encontrarás un resumen de mi trayectoria y un formulario para que podamos colaborar.</p>
         <div className="bg-[#112240]/60 border border-[#233554] rounded-xl p-8 flex flex-col gap-6 shadow-sm">
-          <h3 className="text-2xl font-bold text-white/80 mb-1">Resumen del Currículum</h3>
+          <h3 className="text-2xl font-bold text-white/75 mb-1">Resumen del Currículum</h3>
           <div className="grid md:grid-cols-2 gap-6 text-sm text-[#ccd6f6]">
             <div className="space-y-2">
               <h4 className="font-semibold text-[#64ffda]">Perfil</h4>

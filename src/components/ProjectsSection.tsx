@@ -64,7 +64,7 @@ export default function ProjectsSection() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
               <div className="flex items-center gap-4 flex-wrap">
                 <span className="text-sm text-[#8892b0]">{project.year}</span>
-                <h2 className="text-2xl font-bold text-white/80">{project.title}</h2>
+                <h2 className="text-2xl font-bold text-white/75">{project.title}</h2>
               </div>
               <div className="flex gap-3 mt-1 md:mt-0">
                 <a

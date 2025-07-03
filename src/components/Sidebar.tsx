@@ -31,9 +31,9 @@ export default function Sidebar() {
   }, []);
 
   return (
-    <aside className="hidden md:flex flex-col justify-between items-start w-80 pr-10 pb-8 sticky top-32 self-start h-[calc(100vh-6rem)]" aria-label="Barra lateral de navegación">
+    <aside className="hidden md:flex flex-col justify-between items-start w-80 pr-10 pb-12 sticky top-32 self-start h-[calc(100vh-6rem)]" aria-label="Barra lateral de navegación">
       <div className="w-full">
-        <h1 className="text-4xl font-extrabold tracking-tight text-white/80 mb-1 leading-tight">Antonio Rodríguez</h1>
+        <h1 className="text-4xl font-extrabold tracking-tight text-white/75 mb-1 leading-tight">Antonio Rodríguez</h1>
         <h2 className="text-lg font-semibold text-[#64ffda]">Ingeniero de Software</h2>
         <p className="text-[#8892b0] text-base md:text-lg leading-relaxed mt-3 mb-10 max-w-sm">
           Construyo experiencias digitales accesibles y pixel-perfect para la web.

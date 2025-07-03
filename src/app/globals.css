@@ -24,3 +24,15 @@ h1, h2, h3, h4, h5, h6 {
 p {
   @apply text-[#8892b0];
 }
+
+/* Profundidad adicional: efectos de resplandor difuminado */
+body::after {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(1100px at 25% 15%, rgba(100,255,218,0.05) 0%, transparent 70%),
+              radial-gradient(1000px at 90% 85%, rgba(100,255,218,0.03) 0%, transparent 70%);
+  filter: blur(160px);
+  z-index: -9;
+}
