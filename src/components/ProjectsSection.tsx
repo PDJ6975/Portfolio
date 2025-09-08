@@ -16,9 +16,9 @@ const projects = [
     year: "2024",
     title: "Fantasy Realms",
     description:
-      "Juego de cartas online tipo Fantasy Realms. API REST con Spring Boot, cliente React y comunicación en tiempo real mediante WebSockets. Documentación OpenAPI y CI/CD.",
+      "Juego de cartas online basado en Fantasy Realms. API REST con Spring Boot, cliente React y comunicación en tiempo real mediante WebSockets. Documentación OpenAPI y CI/CD.",
     tech: ["Spring Boot", "React", "WebSockets", "Swagger"],
-    github: "https://github.com/PDJ6975/fantasy-realms",
+    github: "https://github.com/PDJ6975/FantasyRealms",
     demo: "",
   },
   {
@@ -37,7 +37,7 @@ const projects = [
       "Aplicación móvil multiplataforma para recomendaciones de libros usando IA (embeddings, MMR). Construida con Expo y Supabase.",
     tech: ["React Native", "Expo", "TypeScript", "Supabase"],
     github: "https://github.com/PDJ6975/nextread",
-    demo: "",
+    demo: "https://pdj6975.github.io/NextRead",
   },
 ];
 
@@ -76,15 +76,27 @@ export default function ProjectsSection() {
                 >
                   <GithubIcon className="w-6 h-6" />
                 </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Demo de ${project.title}`}
-                  className="text-[#8892b0] hover:text-[#64ffda] transition-colors"
-                >
-                  <ExternalLink className="w-6 h-6" />
-                </a>
+{project.demo ? (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Demo de ${project.title}`}
+                    className="text-[#8892b0] hover:text-[#64ffda] transition-colors"
+                  >
+                    <ExternalLink className="w-6 h-6" />
+                  </a>
+                ) : (
+                  <div
+                    className="text-[#8892b0] opacity-50 cursor-not-allowed relative"
+                    title="Demo no disponible - Solo código fuente"
+                  >
+                    <ExternalLink className="w-6 h-6" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-8 h-0.5 bg-[#8892b0] rotate-45"></div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
             <p className="text-[#ccd6f6] text-base leading-relaxed text-justify mb-1">{project.description}</p>
