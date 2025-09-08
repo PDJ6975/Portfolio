@@ -5,7 +5,7 @@ import { GithubIcon, LinkedinIcon } from "lucide-react";
 const sections = [
   { id: "about", label: "Sobre mí" },
   { id: "projects", label: "Proyectos" },
-  { id: "cv", label: "Currículum / Contacto" },
+  { id: "cv", label: "Currículum" },
 ];
 
 export default function Sidebar() {

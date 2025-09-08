@@ -4,13 +4,13 @@ import { GithubIcon, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    year: "2024",
+    year: "2025",
     title: "Portfolio Personal (este sitio)",
     description:
-      "Sitio web personal desarrollado con Next.js, Tailwind CSS y Framer Motion. Diseño inspirado en brittanychiang.com, con fondo de partículas, sidebar fijo, accesibilidad mejorada y despliegue en Vercel.",
+      "Portfolio profesional desarrollado con Next.js y exportación para GitHub Pages. Incluye efectos de partículas, animaciones fluidas con Framer Motion y navegación responsive optimizada.",
     tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
-    github: "https://github.com/PDJ6975/portfolio",
-    demo: "https://portfolio-antonio.vercel.app/",
+    github: "https://github.com/PDJ6975/Portfolio",
+    demo: "https://pdj6975.github.io/Portfolio/",
   },
   {
     year: "2024",
