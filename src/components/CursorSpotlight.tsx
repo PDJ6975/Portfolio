@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 
 /**
  * CursorSpotlight crea un círculo difuminado alrededor del cursor usando mix-blend-mode
- * para iluminar el fondo, similar al efecto de brittanychiang.com.
+ * para iluminar el fondo.
  */
 export default function CursorSpotlight() {
   const ref = useRef<HTMLDivElement>(null);

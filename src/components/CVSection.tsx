@@ -33,18 +33,9 @@ export default function CVSection() {
               <h4 className="font-semibold text-[#64ffda]">Proyectos Destacados</h4>
               <ul className="list-disc list-inside space-y-1 md:columns-2">
                 <li>Portfolio Personal (Next.js, Tailwind, Framer Motion)</li>
-                <li>Gestor de Tareas (Spring Boot & React)</li>
-                <li>Fantasy Realms (WebSockets, Swagger)</li>
-                <li>M30 Simulator (MLP / LSTM, NetLogo)</li>
+                <li>Fantasy Realms (Spring Boot, React)</li>
                 <li>NextRead (Expo, IA embeddings)</li>
-              </ul>
-            </div>
-            <div className="space-y-2">
-              <h4 className="font-semibold text-[#64ffda]">Certificaciones</h4>
-              <ul className="list-disc list-inside space-y-1">
-                <li>Arquitectura de Software en la Nube (2021)</li>
-                <li>Scrum Master (2020)</li>
-                <li>Programa de Liderazgo (2019)</li>
+                <li>Game Deals (TypeScript, Apify)</li>
               </ul>
             </div>
             <div className="space-y-2">
@@ -54,7 +45,7 @@ export default function CVSection() {
           </div>
         </div>
         <a
-          href="https://drive.google.com/uc?export=download&id=1TmtoeHVcXBjSRqGOXrHGa_iWqs7isGMg"
+          href="https://drive.google.com/uc?export=download&id=1xpiepSANH9VK7tXxXkePNvYUKMOgArGu"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-3 inline-block w-max bg-transparent border border-[#64ffda] text-[#64ffda] px-6 py-2 rounded-md font-semibold transition-colors hover:bg-[#64ffda]/10"

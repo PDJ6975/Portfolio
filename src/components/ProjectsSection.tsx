@@ -22,23 +22,23 @@ const projects = [
     demo: "",
   },
   {
-    year: "2023",
-    title: "M30 Simulator",
-    description:
-      "Simulador de tráfico vehicular con Python y NetLogo. Modelos MLP y LSTM para predicción de flujo, análisis de sensibilidad y visualización interactiva.",
-    tech: ["Python", "TensorFlow", "scikit-learn", "NetLogo"],
-    github: "https://github.com/PDJ6975/m30-simulator",
-    demo: "",
-  },
-  {
-    year: "2023",
+    year: "2025",
     title: "NextRead",
     description:
-      "Aplicación móvil multiplataforma para recomendaciones de libros usando IA (embeddings, MMR). Construida con Expo y Supabase.",
-    tech: ["React Native", "Expo", "TypeScript", "Supabase"],
-    github: "https://github.com/PDJ6975/nextread",
+      "Web de recomendación de libros usando IA (GPT-4). Construida con Spring Boot (Java), Next.js (JavaScript) y Supabase como BD. Implementa un sistema de autenticación por token jwt y verificación por email. Desarrollo cerrado por intento comercial.",
+    tech: ["Next.js", "Spring Boot", "Java", "Supabase", "JavaScript"],
+    github: "",
     demo: "https://pdj6975.github.io/NextRead",
   },
+  {
+    year: "AHORA",
+    title: "GAME DEALS",
+    description:
+      "Scrapper stateless en TypeScript sobre Apify para obtener ofertas y noticias sobre videojuegos. Actualmente en desarrollo cerrado cerca del MVP.",
+    tech: ["Python", "TensorFlow", "scikit-learn", "NetLogo"],
+    github: "",
+    demo: "",
+  }
 ];
 
 export default function ProjectsSection() {
@@ -67,15 +67,27 @@ export default function ProjectsSection() {
                 <h2 className="text-2xl font-bold text-white/75">{project.title}</h2>
               </div>
               <div className="flex gap-3 mt-1 md:mt-0">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`GitHub de ${project.title}`}
-                  className="text-[#8892b0] hover:text-[#64ffda] transition-colors"
-                >
-                  <GithubIcon className="w-6 h-6" />
-                </a>
+                {project.github ? (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`GitHub de ${project.title}`}
+                    className="text-[#8892b0] hover:text-[#64ffda] transition-colors"
+                  >
+                    <GithubIcon className="w-6 h-6" />
+                  </a>
+                ) : (
+                  <div
+                    className="text-[#8892b0] opacity-50 cursor-not-allowed relative"
+                    title="Repositorio privado - Desarrollo comercial"
+                  >
+                    <GithubIcon className="w-6 h-6" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-8 h-0.5 bg-[#8892b0] rotate-45"></div>
+                    </div>
+                  </div>
+                )}
 {project.demo ? (
                   <a
                     href={project.demo}

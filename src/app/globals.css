@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Paleta base */
 :root {
   --color-bg-start: #0a192f;
   --color-bg-end: #112240;
@@ -25,7 +24,6 @@ p {
   @apply text-[#8892b0];
 }
 
-/* Profundidad adicional: efectos de resplandor difuminado */
 body::after {
   content: "";
   pointer-events: none;
