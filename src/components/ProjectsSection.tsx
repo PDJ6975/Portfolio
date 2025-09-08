@@ -32,7 +32,7 @@ const projects = [
   },
   {
     year: "AHORA",
-    title: "GAME DEALS",
+    title: "Game Deals",
     description:
       "Scrapper stateless en TypeScript sobre Apify para obtener ofertas y noticias sobre videojuegos. Actualmente en desarrollo cerrado cerca del MVP.",
     tech: ["Python", "TensorFlow", "scikit-learn", "NetLogo"],
