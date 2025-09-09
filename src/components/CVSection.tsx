@@ -12,7 +12,7 @@ export default function CVSection() {
       transition={{ duration: 0.8 }}
     >
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">
-        <p className="text-[#8892b0] text-lg leading-relaxed text-justify">Aquí encontrarás un resumen de mi trayectoria y un formulario para que podamos colaborar.</p>
+        <p className="text-[#8892b0] text-lg leading-relaxed text-justify">Aquí encontrarás un resumen de mi trayectoria y un contacto para que podamos colaborar.</p>
         <div className="bg-[#112240]/60 border border-[#233554] rounded-xl p-8 flex flex-col gap-6 shadow-sm">
           <h3 className="text-2xl font-bold text-white/75 mb-1">Resumen del Currículum</h3>
           <div className="grid md:grid-cols-2 gap-6 text-sm text-[#ccd6f6]">
@@ -45,7 +45,7 @@ export default function CVSection() {
           </div>
         </div>
         <a
-          href="https://drive.google.com/uc?export=download&id=1xpiepSANH9VK7tXxXkePNvYUKMOgArGu"
+          href="https://drive.google.com/uc?export=download&id=1ebuc56bSrHTst3g2a_6DOKv8j-MpFCW1"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-3 inline-block w-max bg-transparent border border-[#64ffda] text-[#64ffda] px-6 py-2 rounded-md font-semibold transition-colors hover:bg-[#64ffda]/10"
