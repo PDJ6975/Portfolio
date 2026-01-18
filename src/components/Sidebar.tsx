@@ -4,6 +4,7 @@ import { GithubIcon, LinkedinIcon } from "lucide-react";
 
 const sections = [
   { id: "about", label: "Sobre mí" },
+  { id: "experience", label: "Experiencia profesional" },
   { id: "projects", label: "Proyectos destacados" },
   { id: "cv", label: "Currículum" },
 ];

@@ -4,6 +4,7 @@ import { EnvelopeIcon } from '@heroicons/react/24/outline';
 import { Link as ScrollLink, Element } from 'react-scroll';
 import { GithubIcon } from 'lucide-react';
 import AboutSection from "../components/AboutSection";
+import ExperienceSection from "../components/ExperienceSection";
 import ProjectsSection from "../components/ProjectsSection";
 import CVSection from "../components/CVSection";
 
@@ -16,6 +17,10 @@ export default function Home() {
     <div>
       <Element name="about">
         <AboutSection />
+      </Element>
+      <div className="h-0" />
+      <Element name="experience">
+        <ExperienceSection />
       </Element>
       <div className="h-0" />
       <Element name="projects">

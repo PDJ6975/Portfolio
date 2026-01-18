@@ -45,7 +45,7 @@ export default function CVSection() {
           </div>
         </div>
         <a
-          href="https://drive.google.com/uc?export=download&id=1ebuc56bSrHTst3g2a_6DOKv8j-MpFCW1"
+          href="https://drive.google.com/uc?export=download&id=1PL1XWWX3sJBazu5aHTfEIoV0mQzeP6q7"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-3 inline-block w-max bg-transparent border border-[#64ffda] text-[#64ffda] px-6 py-2 rounded-md font-semibold transition-colors hover:bg-[#64ffda]/10"
