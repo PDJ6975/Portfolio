@@ -3,7 +3,7 @@ export default function About() {
     <section className="max-w-2xl mx-auto flex flex-col gap-6">
       <h1 className="text-3xl font-bold mb-2">Sobre mí</h1>
       <p className="text-lg text-gray-700">
-        Soy Antonio Rodríguez Calderón, estudiante de último año de Ingeniería de Software en la Universidad de Sevilla. Tengo experiencia en desarrollo de aplicaciones web, especializado en Java y frameworks como Spring Boot y React. Me apasiona la inteligencia artificial, el desarrollo full stack y la creación de soluciones innovadoras.
+        Soy Antonio Rodríguez Calderón, estudiante de último año de Ingeniería de Software en la Universidad de Sevilla. Tengo experiencia profesional en el desarrollo de aplicaciones web, especializado en Java y frameworks como Spring Boot y React. Me apasiona el desarrollo full stack y la creación de soluciones innovadoras.
       </p>
       <ul className="list-disc list-inside text-gray-700">
         <li>Experiencia con metodologías ágiles y control de versiones (Git, GitHub Actions).</li>

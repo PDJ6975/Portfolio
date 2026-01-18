@@ -7,7 +7,7 @@ const projects = [
     year: "2025",
     title: "Portfolio Personal (este sitio)",
     description:
-      "Portfolio profesional desarrollado con Next.js y exportación para GitHub Pages. Incluye efectos de partículas, animaciones fluidas con Framer Motion y navegación responsive optimizada.",
+      "Portfolio desarrollado con Next.js y exportación para GitHub Pages. Incluye efectos, animaciones fluidas con Framer Motion y navegación optimizada.",
     tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
     github: "https://github.com/PDJ6975/Portfolio",
     demo: "https://pdj6975.github.io/Portfolio/",
@@ -16,7 +16,7 @@ const projects = [
     year: "2024",
     title: "Fantasy Realms",
     description:
-      "Juego de cartas online basado en Fantasy Realms. API REST con Spring Boot, cliente React y comunicación en tiempo real mediante WebSockets. Documentación OpenAPI y CI/CD.",
+      "Juego de cartas online basado en Fantasy Realms. API REST con Spring Boot, cliente React y comunicación en tiempo real mediante WebSockets, con documentación OpenAPI.",
     tech: ["Spring Boot", "React", "WebSockets", "Swagger"],
     github: "https://github.com/PDJ6975/FantasyRealms",
     demo: "",
@@ -25,10 +25,10 @@ const projects = [
     year: "2025",
     title: "NextRead",
     description:
-      "Web de recomendación de libros usando IA (GPT-4). Construida con Spring Boot (Java), Next.js (JavaScript) y Supabase como BD. Implementa un sistema de autenticación por token jwt y verificación por email. Desarrollo cerrado por intento comercial.",
+      "Web de recomendación de libros usando IA (GPT-4). Construida con Spring Boot (Java), Next.js (JavaScript) y Supabase como BD. Implementa un sistema de autenticación por token jwt y verificación por email.",
     tech: ["Next.js", "Spring Boot", "Java", "Supabase", "JavaScript"],
-    github: "",
-    demo: "https://pdj6975.github.io/NextRead",
+    github: "https://github.com/PDJ6975/NextRead",
+    demo: "",
   },
   {
     year: "AHORA",
